@@ -1,0 +1,98 @@
+@keyframes fade{
+    from{opacity: 0}
+    to{opacity: inherit}
+}
+
+.fadein{
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://cdn.hswstatic.com/gif/gettyimages-167430693.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0%;
+}
+
+
+#box{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 70%;
+    margin: auto;
+    border: dashed 5px hsla(66, 91%, 40%, 0.568);
+    border-radius: 30px;
+    padding-inline: 40px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 5px hsla(69, 95%, 37%, 0.671);
+}
+
+#form input{
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px hsla(60, 100%, 50%, 0.158), -1px -1px -2px hsla(120, 100%, 25%, 0.158);
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 3.5px;
+    font-family: "Bahnschrift";
+    background-color: hsla(81, 100%, 25%, 0.507);
+    color: rgb(227, 243, 10);
+}
+
+#form label{
+    font-family: "Arial Black";
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 30px;
+    color: black;
+    text-shadow: 2px 2px 4px yellow, -2px -2px 4px green;
+}
+
+select{
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 4.5px;
+    color: black;
+    background-color: hsla(61, 92%, 45%, 0.486);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-family: "Bahnschrift";
+}
+
+h1{
+    overflow: hidden;
+    font-size: 4rem;
+    position: absolute;
+    text-shadow: 2px 2px 4px yellow, -2px -2px 4px green;
+    font-weight: bold;
+    font-family: "Bahnschrift";
+}
+
+#form input::placeholder{
+    color: rgb(227, 243, 10);
+}
